@@ -9,7 +9,7 @@
 <body>
 <h1>Hello, World!</h1>
 <p>This is a sample "Hello, World!" application for 2028 April Batch.</p>
-    <p> HIiii</p>
+    <p> HEllo</p>
 </body>
 </html>
 
