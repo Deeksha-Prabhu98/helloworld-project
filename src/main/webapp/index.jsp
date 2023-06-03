@@ -8,8 +8,8 @@
 </head>
 <body>
 <h1>Hello, World!</h1>
-<p>This is a sample "Hello, World!" application for 2028 April Batch.</p>
-    <p> HEllo</p>
+<p>This is a sample "Hello, Dishu</p>
+    <p> Hello Dishu</p>
 </body>
 </html>
 
