@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello, Dishu!</title>
+<title>Hello, World!</title>
 </head>
 <body>
 <h1>Hello, Dishu!</h1>
-<p>This is a sample "I love you so much</p>
+<p>This is a sample "Welcome to Udupi</p>
     <p> Caring you always</p>
 </body>
 </html>
