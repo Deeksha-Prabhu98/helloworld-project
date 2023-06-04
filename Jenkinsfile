@@ -21,7 +21,7 @@ pipeline {
         } 
         stage('Docker_build') {
             steps {
-                echo 'Docker build_projectd'
+                echo 'Docker build_projecta'
                 sh 'docker build -t projecta .' 
             }
         }
