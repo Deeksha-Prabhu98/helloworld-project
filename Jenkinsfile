@@ -37,7 +37,7 @@ pipeline {
                 sh 'docker tag  projecta yogish1235/projecta'
             }
         } 
-        stage('Deploy to docker hub') {
+        stage('Deploy to dockerhub') {
             steps {
                 echo 'Deploy to docker hub'
                 sh 'docker push yogish1235/projecta'
