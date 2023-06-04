@@ -7,7 +7,7 @@
 <title>Hello, there!</title>
 </head>
 <body>
-<h1>Hello, Dishu!</h1>
+<h1>Hello, Karnataka!</h1>
 <p>This is a sample "Welcome to Udupi</p>
     <p> Caring you always</p>
 </body>
