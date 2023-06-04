@@ -1,5 +1,5 @@
 pipeline {
-    agent { label "agentA" }
+    agent { label "Agent_1" }
     
     triggers {
         pollSCM('* * * * *')
@@ -9,7 +9,7 @@ pipeline {
         stage('clone_project_A') {
             steps {
                 echo 'clone project A'
-                git 'https://github.com/vincloud2/Helloworld-latest.git'
+                git 'https://github.com/Yogish1235/Helloworld-latest.git'
             }
         }
         stage('build_project_A') {
@@ -22,38 +22,39 @@ pipeline {
         stage('Docker_build') {
             steps {
                 echo 'Docker build_projectd'
-                sh 'docker build -t projectd .' 
+                sh 'docker build -t projecta .' 
             }
         }
         stage('login to dockerhub') {
             steps {
                 echo 'login to dockerhub'
-                sh 'docker login -u vnom1985 -p abc@12345'
+                sh 'docker login -u yogish1235 -p Yogi@docker1998'
             }
         } 
         stage('Tag the Image') {
             steps {
                 echo 'Tag the Image'
-                sh 'docker tag  projectd vnom1985/projectd'
+                sh 'docker tag  projecta yogish1235/projecta'
             }
         } 
         stage('Deploy to docker hub') {
             steps {
                 echo 'Deploy to docker hub'
-                sh 'docker push vnom1985/projectd'
+                sh 'docker push yogish1235/projecta'
             }
         }
-        stage('Remove Docker conatiner') {
+        stage('Remove Docker container') {
             steps {
-                echo 'Remove Docker conatiner'
-                sh 'docker stop projectd_conatiner || true'
-                sh 'docker rm projectdconatiner || true'
+                echo 'Remove Docker container'
+                sh 'docker stop projectA_container || true'
+                sh 'docker rm projectA_container || true'
             }
-        }        
+        }
+              
         stage('Run docker image') {
             steps {
                 echo 'Deploy to docker hub'
-                sh 'docker run --name projectd_conatiner -d -p 8181:8080 vnom1985/projectd'
+                sh 'docker run --name projectA_container -d -p 8181:8080 yogish1235/projecta'
             }
         }        
     }
